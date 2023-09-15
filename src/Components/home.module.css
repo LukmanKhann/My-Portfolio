@@ -1,0 +1,186 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   transition: all 0.4s ;
+   
+}
+/* main div section */
+
+#maindiv{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#videodiv{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.9 ;
+}
+#videodiv>video{
+    /* opacity: 0.6; */
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.9 ;
+}
+/* navigation div  section*/
+
+#navdiv{
+    height: 120px;
+    width: 100%;
+    /* background-color: coral; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 9999;
+    top: 0%;
+    left: 0%;
+  
+}
+/* innder div navigation div */
+#logodiv{
+    height: 70px;
+    width: 50%;
+    /* background-color: aqua; */
+
+}
+#listdiv{
+    height: 70px;
+    width: 50%;
+    /* background-color: rgb(38, 234, 38); */
+}
+#listdiv>ul{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 70px;
+    list-style-type: none;
+}
+#listdiv>ul>li>a{
+    text-decoration: none;
+margin-left:42px;
+font-family: 'Poppins', sans-serif;
+/* font-weight: 600; */
+color: white;
+letter-spacing: 1px;
+
+}
+#listdiv>ul>li>a:hover{
+   color: rgb(235,74,76);
+}
+
+/* text div section */
+#textdiv{
+ height: 600px;
+ width: 100%;
+ /* background-color: brown; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+/* inner div of text div */
+
+#innertextdiv{
+    margin-top: 160px;
+height: 400px;
+width: 700px;
+/* background-color: darkslategrey; */
+}
+#innertextdiv>#myname{
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+#innertextdiv>#creativetext{
+    margin-top: 33px;
+    margin-left: 220px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(162,162,162);
+    font-size: 25px;
+}
+#innertextdiv>#myname>#lukman{
+    color: rgb(235,74,76);
+}
+#innertextdiv>.getbtn{
+    height: 47px;
+    width: 170px;
+    border: 0px solid;
+    border-radius: 50px;
+ margin-top: 60px;
+ margin-left: 250px;
+ font-family: 'Poppins', sans-serif;
+ font-size: 16px;
+ font-weight: 500;
+ /* font-stretch: 100%; */
+ background-color: rgb(235,74,76);
+ color: white;
+ letter-spacing: 2px;
+ 
+}
+#innertextdiv>.getbtn:hover{
+    background-color: white;
+    color: black;
+}
+.text{
+    color: white;
+}
+
+
+
+
+
+/* cursor circle componenet */
+/* CursorCircle.css */
+
+.cursorcontainer {
+    /* position: fixed; */
+    pointer-events: none;
+    z-index: 9999;
+    /* background-color: black; */
+    /* height: 100vh;
+    width: 100%; */
+  }
+  
+  .cursorcircle {
+    width: 30px;
+    height: 30px;
+    /* background-color: #b47676b6;  */
+    border: 1px solid rgba(200, 35, 35, 0.915);
+    border-radius: 70%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition:  width 0.2s, height 0.2s, opacity 0.6s;
+
+    /* pointer-events: none;  */
+    z-index: 1;
+  }
+  .cursordot {
+    width: 6px;
+    height: 6px;
+    background-color: #ff0000ba; /* Dot color (you can change this) */
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(-50%, -50%);
+    /* transition:  width 0.2s, height 0.2s, opacity 0.6s; */
+    transition: transform 0.1s ease ;
+    z-index: 1;
+    
+  }

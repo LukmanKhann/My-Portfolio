@@ -1,0 +1,313 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+#maindiv{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#outeronediv{
+    height: 600px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    margin-top: 70px;
+   
+}
+
+#upperonediv{
+    height: 227px;
+    width: 80%;
+    /* background-color: blueviolet; */
+    margin-left: 200px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    display: flex;
+    flex-direction: column;
+
+}
+#upperonediv>hr{
+    position: relative;
+    top: 24px;
+    border: none;
+    border-top: 1px dashed rgba(87, 85, 85, 0.464);
+    width: 90%;
+    margin-left: 32px;
+}
+#upperonediv>#hometouchdiv{
+    height: 40px;
+    width: 200px;
+    background-color: rgb(34,34,34);
+    margin-top: 110px;
+    position: relative;
+    left: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#hometouchdiv>p{
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(162,162,162);
+}
+#hometouchdiv>p>a{
+    font-size: 16px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.971);
+}
+#upperonediv>#gettouch{
+    margin-left: 120px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.964);
+    
+}
+.redtxt{
+    color: rgb(235,74,76);   
+}
+
+
+
+
+
+
+
+
+
+
+/* Lower div */
+
+#loweronediv>#leftonediv{
+    height: 300px;
+    width: 40%;
+    /* background-color: rgb(242, 255, 2); */
+    margin-right: 75px;
+
+}
+#loweronediv>#rightonediv{
+    height: 300px;
+    width: 40%;
+    /* background-color: green; */
+}
+#loweronediv>#leftonediv>.detailsdiv{
+    height: 49px;
+    width: 390px;
+    background-color: rgb(34,34,34);
+    margin-top: 24px;
+    margin-left: 79px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.753);
+}
+.detailsdiv>p{
+    color: white;
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 12px;
+  margin-left: 58px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  
+
+}
+.detailsdiv>p>a{
+    text-decoration: none;
+    color: white;
+}
+.detailsdiv>p>a:hover{
+    color: rgb(235,74,76);
+}
+.detailsdiv>i{
+    margin-left: 15px;
+    /* margin-top: 10px; */
+    color: rgb(235,74,76);
+    position: relative;
+    top: 15px;
+}
+
+#loweronediv>#rightonediv>.nameinput{
+    height: 45px;
+    width: 172px;
+    background-color: rgb(34,34,34);
+    margin-top: 30px;
+    margin-right: 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.753);
+    color: rgb(175, 170, 170);  
+    text-align: center;
+
+} 
+.nameinput::placeholder{
+   position: relative;
+   right: 40px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   font-size: 14px;
+   color: rgb(162,162,162);
+  
+}
+#loweronediv>#rightonediv>#messageinput{
+    display: block;
+    margin-top: 20px;
+    height: 115px;
+    width: 372px;
+    border-radius: 10px;
+    background-color: rgb(34,34,34);
+    border: 1px solid rgba(0, 0, 0, 0.753);
+    color: rgb(175, 170, 170);
+    text-align: center;
+ 
+}   
+#messageinput::placeholder{
+    position: relative;
+    bottom: 25px;
+    right: 127px;
+    color: rgb(162,162,162);
+    font-size: 14px;
+}
+.sendmessagebtn{
+    height: 47px;
+    width: 200px;
+    border: 0px solid;
+    border-radius: 50px;
+ margin-top: 20px;
+ /* margin-left: 250px; */
+ font-family: 'Poppins', sans-serif;
+ font-size: 16px;
+ font-weight: 500;
+ /* font-stretch: 100%; */
+ background-color: rgb(235,74,76);
+ color: white;
+ letter-spacing: 1px;
+}
+.sendmessagebtn:hover{
+        background-color: white;
+        color: black;
+}
+
+
+
+
+
+
+
+
+
+
+/* Project Section */
+#loweronediv{
+    height: 350px;
+    width: 80%;
+    /* background-color: rgb(1, 192, 235); */
+    margin-left: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectdiv{
+ height: 270px;
+ width: 260px;
+ /* background-color: rgb(25, 229, 175); */
+ margin-right: 30px;
+ border-radius: 10px;
+ overflow: hidden;
+ position: relative;
+}
+#projectdiv1{
+    background-color: rgb(1,189,198);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#projectdiv1>a>img{
+    height: 130px;
+    width: 130px;
+    margin-bottom: 70px;
+    transition: transform 0.3s ease;
+}
+#projectdiv2{
+    background-color: rgb(0,181,224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#projectdiv2>a>img{
+    height: 130px;
+    width: 130px;
+    margin-bottom: 70px;
+    transition: transform 0.3s ease;
+    border-radius: 40px ;
+   
+}
+#projectdiv1:hover img{
+    transform: scale(1.1);
+}
+#projectdiv2:hover img{
+    transform: scale(1.1);
+}#projectdiv3:hover img{
+    transform: scale(1.1);
+}
+#projectdiv3{
+    background-color:rgb(167, 249, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#projectdiv3>a>img{
+    height: 130px;
+    width: 130px;
+    margin-bottom: 74px;
+    transition:  transform 0.2s ease;
+}
+.projectdiv>.infocard{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 80px   ;
+    background-color: rgb(34,34,34); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+    transition: bottom 0.3s ease-in-out; 
+
+}
+.projectdiv>img{
+
+}
+.projectdiv:hover .infocard {
+    bottom: 0; /* Show the card on hover */
+  }
+  .infocard>p{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+    color: rgba(255, 255, 255, 0.972);
+  }
+  .infocard>p>a{
+    text-decoration: none;
+    color: rgba(150, 147, 147, 0.972);
+  }
+  .infocard>p>a:hover{
+    color: rgb(235,74,76);
+  }
+  .infocard>p>a>i{
+    color: rgb(235,74,76);
+  }

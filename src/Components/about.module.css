@@ -1,0 +1,652 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* parent section which is main section in about component */
+#maindiv{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#parentdiv{
+height: 500px;
+width: 100%;
+/* background-color: aqua; */
+/* z-index: 9999; */
+margin-top: 170px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#photodiv{
+height: 350px;
+width: 450px;
+background-color: rgb(23,27,28);
+margin-right: 100px;
+border-radius: 5px;
+}
+#infodiv{
+    height: 350px;
+width: 600px;
+/* background-color: blueviolet; */
+
+}
+
+#infodiv>#myname{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    /* text-align: center; */
+}
+#infodiv>#myname>#lukman{
+    color: rgb(235,74,76);
+}
+#infodiv>#creativetext{
+    margin-top: 15px;
+    /* margin-left: 220px; */
+    font-family: 'Poppins', sans-serif;
+    color: rgb(162,162,162);
+    font-size: 21px;
+    letter-spacing: 1px;
+    
+}
+#infodiv>#paragraph{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 45px;
+    font-size: 17px;
+    color: rgb(178, 176, 176);
+
+   
+}
+#infodiv>hr{
+    /* margin-top: 6px; */
+    position: relative;
+    top: 20px;
+    border: none;
+    border-top: 1px dashed rgb(87, 85, 85);
+}
+#infodiv>.learnbtn{
+    height: 47px;
+    width: 170px;
+    border: 0px solid;
+    border-radius: 50px;
+ margin-top: 20px;
+ /* margin-left: 60px; */
+ font-family: 'Poppins', sans-serif;
+ font-size: 16px;
+ font-weight: 500;
+ /* font-stretch: 100%; */
+ background-color: rgb(235,74,76);
+ color: white;
+}
+#infodiv>.learnbtn:hover{
+    background-color: white;
+    color: black;
+}
+#infodiv>#paragraph>#paraname{
+    color: rgba(255, 255, 255, 0.985);
+}
+.text{
+    color: rgba(255, 255, 255, 0.966);
+}
+
+
+
+
+
+
+/* learn section  */
+
+#parentlearndiv{
+   
+    height: 100vh   ;
+    width: 100%;
+    background-color: rgb(0,0,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 9999;
+    top: 0%;
+    /* left: 0%; */
+
+}
+
+#childlearndiv{
+    position: relative;
+    background-color:rgb(34,34,34);
+    height: 600px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+   
+}
+#childlearndiv>#closebtn{
+    position: absolute;
+  top: 0%;
+  right: 0px;
+  /* left: 10px; */
+    font-size: 20px;
+    cursor: pointer;
+    color: #f70404; /* Change the color to your preferred color */
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+#childlearndiv>#closebtn:hover{
+    border-radius: 20px;
+    transition: all 0.4s ;
+}
+#childlearndiv>#closebtn>i{
+    font-size: 15px;
+}
+/* childrendiv inside item */
+#childlearndiv>#childa1{
+    /* background-color: #333; */
+    height: 595px;
+    width: 40%;
+   border-right: 1px dashed rgba(109, 105, 105, 0.3);
+   /* flex: 1; */
+
+}
+#childlearndiv>#childa2{
+height: 100%;
+width: 60%;
+/* flex: 1; */
+overflow-y: auto;
+max-height: 100%;
+/* overflow-y: hidden; */
+}
+#childa2>#childa2container{
+    overflow-y: auto;
+    max-height: 3000px; /* Ensure #childa2-container doesn't exceed parent's height */
+    display: flex;
+    flex-direction: column;
+   
+}
+#childa2::-webkit-scrollbar{
+width: 0;
+}
+#childa2::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+/* child- a1 div inside item */
+
+#childa1>#childa1photo{
+height: 120px;
+width: 120px;
+background-color: rgb(22,26,27);
+border-radius: 100%;
+margin-top: 50px;
+margin-left: 100px;
+}
+#childa1>#childa1info{
+    height: 418px;
+    width: 100%;
+    /* background-color: rgb(30, 203, 11); */
+}
+#childa1>#childa1info>#myname{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.966);
+    text-align: center;
+    position: relative;
+    top: 20px;
+    
+   
+}
+#childa1>#childa1info>#creativetext{
+    margin-top: 30px;
+    /* margin-left: 220px; */
+    font-family: 'Raleway', sans-serif;
+    color: rgb(162,162,162);
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: 75px;
+    line-height: 19px;
+    /* text-align: center; */
+}
+#childa1>#childa1info>ul>li{
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    height: 45px;
+    /* margin-top: 10px; */
+    margin-left: 40px;
+    position: relative;
+    top: 36px;
+    color: rgb(178, 176, 176);
+}
+#childa1>#childa1info>ul>li>a{
+    text-decoration: none;
+    position: relative;
+    /* bottom: 8px; */
+   color: rgba(255, 255, 255, 0.966);
+}
+#childa1>#childa1info>ul>li>a:hover{
+ color: rgb(235,74,76);
+}
+
+#childa1>#childa1info>.textbtn{
+    height: 47px;
+    width: 170px;
+    border: 0px solid;
+    border-radius: 50px;
+ margin-top: 45px;
+ margin-left: 50px;
+ font-family: 'Poppins', sans-serif;
+ font-size: 15px;
+ font-weight: 500;
+ /* font-stretch: 100%; */
+ background-color: rgb(235,74,76);
+ color: rgb(243, 234, 234);
+ letter-spacing: 1px;
+}
+#childa1>#childa1info>.textbtn:hover{
+    background-color: white;
+    color: black;
+}
+#childa1>#childa1info>ul>li>i{
+margin-right: 9px;
+color: rgb(235,74,76);
+}
+#childa1info>ul>li>#lukman{
+    
+}
+#childa1>#childa1info>ul>hr{
+    position: relative;
+    top: 20px;
+    border: none;
+    border-top: 1px dashed rgb(87, 85, 85);
+    width: 75%;
+    margin-left: 40px;
+}
+
+#devtxt{
+    color: rgba(241, 232, 232, 0.923);
+}
+
+
+/* childa2 div section  */
+
+
+#childa2>#childa2container>#aboutme{
+    height: 303px;
+    width: 100%;
+    /* border: 1px solid red; */
+    
+}
+#aboutme>hr{
+    position: relative;
+    /* bottom: 1px; */
+    margin-top: 10px;
+    border: none;
+    border-top: 1px dashed rgb(87, 85, 85);
+    width: 80%;
+    margin-left: 40px;
+}
+#childa2>#childa2container>#aboutme>#aboutmetxt{
+    font-family: 'Poppins', sans-serif;
+    /* position: relative; */
+    /* top: 45px; */
+    margin-top: 45px;
+    /* left: 37px; */
+    /* right: 10px; */
+    margin-left: 37px;
+    font-size: 20px;
+    
+}
+#childa2>#childa2container>#aboutme>#paragraph{
+   
+margin-top: 20px;
+font-size: 17px;
+font-family: 'Poppins', sans-serif;
+/* letter-spacing: 1px; */
+color: rgb(162,162,162);
+/* text-align:center; */
+margin-left: 40px;
+
+}
+#paragraph>#paraname{
+    color: rgba(255, 255, 255, 0.966);
+}
+
+#qualityservice{
+    height: 298px;
+
+}
+#qualityservice>#quality{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 37px;
+    font-size: 20px;
+    margin-top: 3px;
+}
+#qualityservice>ul>li{
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    height: 23px;
+    margin-top: 10px;
+    margin-left: 45px;
+    position: relative;
+    top: 36px;
+    color: rgb(162,162,162);
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+#qualityservice>ul>li>i{
+    margin-right: 10px;
+    color: rgb(235,74,76);
+}
+#qualityservice>hr{
+    position: relative;
+    top: 17px;
+    /* margin-top: 10px; */
+    border: none;
+    border-top: 1px dashed rgb(87, 85, 85);
+    width: 80%;
+    margin-left: 40px;
+}
+
+/* Programming skill */
+
+
+
+#programmingskill{
+    height: 400px;
+}
+#programmingskill>#programmingtxt{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 37px;
+    font-size: 20px;
+    margin-top: 3px;
+}
+#programmingskill>.skillbar{
+    height: 2px;
+    /* margin-top: 30px; */
+    /* border: 1px solid rgb(89, 79, 79); */
+    background-color: rgb(45,45,45);
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 47px;
+    
+}
+#programmingskill>.skillbar>.skillprogress{
+    background-color: rgb(235,74,76); 
+    height: 100%;
+    width: 80%;
+    /* border-radius: 5px; */
+    text-align: center;
+    /* line-height: 20px; */
+    color: white;
+}
+#programmingskill>.skillname{
+    margin-left: 50px;
+    /* margin-top: px; */
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 18px;
+    color: rgb(162,162,162);
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+#programmingskill>hr{
+    position: relative;
+    bottom: 10px;
+    margin-top: 30px;
+    border: none;
+    border-top: 1px dashed rgb(87, 85, 85);
+    width: 80%;
+    margin-left: 40px;
+
+    /* position: relative;
+    top: 20px;
+    border: none;
+    border-top: 1px dashed rgb(87, 85, 85);
+    width: 75%;
+    margin-left: 40px; */
+}
+
+/* Language Skills Section */
+#languageskill{
+    height: 297px;
+}
+#languageskill>hr{
+    position: relative;
+    top: 17px;
+    /* margin-top: 10px; */
+    border: none;
+    border-top: 1px dashed rgb(87, 85, 85);
+    width: 80%;
+    margin-left: 40px;
+}
+#languageskill>#languagetxt{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 37px;
+    font-size: 20px;
+    margin-top: 3px;
+}
+#languageskill>ul>li{
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    height: 23px;
+    margin-top: 20px;
+    margin-left: 45px;
+    position: relative;
+    top: 36px;
+    color: rgb(162,162,162);
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+#languageskill>ul>li>i{
+    margin-right: 10px;
+    color: rgb(235,74,76);
+}
+
+
+
+/* Education Time line section */
+
+#mydiv{
+    height: 175px;
+    width: 2px;
+    margin-right: 10px;
+    background-color: rgb(45,45,45);
+}
+#circle1{
+    height: 12px;
+    width: 12px;
+    background-color: rgb(235,74,76);
+    border-radius: 100%;
+    position: relative;
+    right: 5px;
+    margin-top: 25px;
+    /* margin-bottom: 50px; */
+    
+}
+#circle2{
+    height: 12px;
+    width: 12px;
+    background-color: rgb(235,74,76);
+    border-radius: 100%;
+    position: relative;
+    right: 5px;
+  margin-top: 75px;
+}
+#mainlinediv{
+    height: 300px;
+    /* width: 600px;    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#yeardiv{
+    height: 250px;
+    width: 45%;
+}
+#collegediv{
+    height: 250px;
+    width: 45%;
+    font-family: 'Poppins', sans-serif;
+}
+.childyear{
+    height: 34px;
+    width: 130px;
+    background-color: rgb(45,45,45);
+    margin-top: 52px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+}
+.year{
+    text-align: center;
+    /* margin-top: 50px; */
+    position: relative;
+    top: 7px;
+    font-size: 15px;
+    color: rgb(162,162,162);
+}
+#collegediv>#university1{
+margin-top: 51px;
+color: rgba(255, 255, 255, 0.966);
+font-weight: 600;
+}
+#collegediv>#diploma1{
+position: relative;
+/* bottom: 7px; */
+top: 7px;
+font-size: 14px;
+color: rgb(162,162,162);
+}
+#collegediv>#diploma2{
+    position: relative;
+/* bottom: 7px; */
+top: 7px;
+font-size: 14px;
+color: rgb(162,162,162);
+}
+#collegediv>#university2{
+    margin-top: 37px;
+    color: rgba(255, 255, 255, 0.966);
+    font-weight: 600;
+}   
+#educationtxt{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 37px;
+    font-size: 20px;
+    margin-top: 3px;   
+}
+#educationtimeline>hr{
+    position: relative;
+    top: 20px;
+    border: none;
+    border-top: 1px dashed rgb(87, 85, 85);
+    width: 80%;
+    margin-left: 40px;
+}
+#certification>hr{
+    position: relative;
+    top: 20px;
+    border: none;
+    border-top: 1px dashed rgb(87, 85, 85);
+    width: 80%;
+    margin-left: 40px;
+}
+/* Client Feedback Section */
+
+#clientfeedback{
+    height: 45  0px; 
+}
+#clientfeedback>#msgbox{
+    height: 180px;
+    width: 400px;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+#clientfeedback>#clientphotobox{
+    height: 150px;
+    width: 480px;
+}
+#clientfeedback>hr{
+    position: relative;
+    top: 20px;
+    border: none;
+    border-top: 1px dashed rgb(87, 85, 85);
+    width: 80%;
+    margin-left: 40px;
+}
+
+#msgbox{
+    border: 2px solid rgb(45,45,45);
+}
+#msgbox>legend>i{
+font-size: 36px;
+color: rgb(235,74,76);
+}
+#msgbox>legend{
+    margin-left: 60px;
+    
+}
+#msgbox>p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    margin-top: 35px;
+    color: rgb(162,162,162);
+    text-align: center;
+    /* margin-left: 10px; */
+}
+
+
+#clientphotobox>#clientphoto{
+height: 100px;
+width: 200px;
+margin-left: 40px;
+/* margin-top: 40px; */
+/* border-radius: 100px; */
+position: relative;
+top: 40px;
+
+}
+#clientphotobox>#clientphoto>img{
+    height: 60px;
+width: 60px;
+background-size: cover;
+object-fit: cover;
+/* margin-top: 40px; */
+border-radius: 100px;
+
+}
+#clientphotobox>#clientphoto>#clientname{
+    position: relative;
+    left: 78px;
+    bottom: 56px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(252, 252, 252, 0.969);
+}
+#clientphotobox>#clientphoto>#clientrole{
+    position: relative;
+    left: 78px;
+    bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgb(162,162,162);
+}
+
+
+/* utility class */
+.a1txt{
+    color: rgba(255, 255, 255, 0.966);
+}
+.redtxt{
+    color: rgb(235,74,76);
+}
