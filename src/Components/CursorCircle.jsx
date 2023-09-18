@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import style from "../Components/home.module.css"
-import bgvideo from "../Video/codevideo.mp4"
+import bgvideo from "../Video/bg720.mp4"
+
 function CursorCircle() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -19,8 +20,8 @@ function CursorCircle() {
   return (
     <div className={style.cursorcontainer}>
       <div id={style.videodiv}>
-        <video autoPlay loop muted>
-            <source src={bgvideo} type="video/mp4"  />
+        <video autoPlay loop muted >
+            <source src={bgvideo}  />
         </video>
        </div>
 
